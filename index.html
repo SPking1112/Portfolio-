@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Animation css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container" id="home">
+            <nav>
+
+                <h2>Portfolio</h2>
+
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
+                <h1>Hi, I'm <span id="random-name">Raja Sri Veelan</span></h1>
+                <p>Full Stack Web Developer</p>
+            </div>
+        </div>
+    </div>
+
+    <!------About ------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img 1.jpg" data-aos="flip-up" data-aos-anchor-placement="center-bottom"
+                        alt="Profile Image">
+                </div>
+                <div class="about-col-2" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Creative and detail-oriented developer with hands-on experience in React.js, Python, and FastAPI.
+                        I build full-stack applications that are fast, clean, and user-focused. From crafting seamless
+                        UIs to designing scalable backend APIs, I’m driven by problem-solving and continuous learning.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Hobbies</span></li>
+                            <li>Chess</li>
+                            <li>Cooking</li>
+                            <li>Silambam</li>
+                            <li>Music</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education" data-aos="fade-right">
+                        <ul>
+                            <li><span>2025</span><br>Full Stack Web Developer at Code99 IT Acedamy</li>
+                            <li><span>2021</span><br>BCA From Prince, Gowrivakkam</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------Skills------------ -->
+
+    <div id="services" class="skills">
+        <div class="container">
+            <h1 class="sub-title">Skills</h1>
+            <div class="services-list">
+                <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                    <i class="fa-brands fa-react"></i>
+                    <h2>React.js</h2>
+                </div>
+                <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                    <i class="fa-brands fa-html5"></i>
+                    <h2>HTML</h2>
+                </div>
+                <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                    <i class="fa-brands fa-css"></i>
+                    <h2>CSS</h2>
+                </div>
+                <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                    <i class="fa-brands fa-js"></i>
+                    <h2>Javascript</h2>
+                </div>
+                <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python</h2>
+                </div>
+                <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>FastAPI</h2>
+                </div>
+                <div data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                    <i class="fa-brands fa-github"></i>
+                    <h2>GitHub</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-------------------------portfolio------------------>
+    <div id="portfolio" id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img
+                        src="https://graphicsfamily.com/wp-content/uploads/edd/2022/02/Free-Modern-Landing-Page-Template-2048x1152.jpg">
+                    <div class="layer">
+                        <h3>SP Fashion Landing Page</h3>
+                        <section><a href="https://spking1112.github.io/SP-Fashion/">Demo</a>
+                            <a href="https://github.com/SPking1112/SP-Fashion">
+                                <i class="fa-brands fa-github"></i></a>
+                        </section>
+                    </div>
+                </div>
+                <div class="work">
+                    <img
+                        src="https://tse1.mm.bing.net/th/id/OIP.yHUQV2u_qxtszs7PT-R2qQHaE8?rs=1&pid=ImgDetMain&o=7&rm=3">
+                    <div class="layer">
+                        <h3>Iphone Landing Page</h3>
+                        <section><a href="https://spking1112.github.io/Iphone-Landing-Page/">Demo</a>
+                            <a href="https://github.com/SPking1112/Iphone-Landing-Page">
+                                <i class="fa-brands fa-github"></i></a>
+                        </section>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://themewagon.com/wp-content/uploads/2021/12/restoran.png">
+                    <div class="layer">
+                        <h3>Creative Website</h3>
+                        <section><a href="https://spking1112.github.io/NeuraNX.AI/">Demo</a>
+                            <a href="https://github.com/SPking1112/NeuraNX.AI">
+                                <i class="fa-brands fa-github"></i></a>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------contact----------------------------- -->
+
+    <div class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>rajasriveelanbot@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 78100 85661</p>
+                    <div class="social-icons">
+                        <a href="http://facebook.com/" data-aos="fade-down" data-aos-anchor-placement="bottom-bottom"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="http://twitter.com/" data-aos="fade-up" data-aos-anchor-placement="center-bottom"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/" data-aos="fade-down"
+                            data-aos-anchor-placement="center-bottom"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="http://linkedin.com/" data-aos="fade-up" data-aos-anchor-placement="center-bottom"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="./resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./style.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz8t3A1sXlmDZYrj08crD8Ui47UiI39d74k63rSibIbsEaEKUEKIcEAILlYPLJDm6Hmqw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 500)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <!-- Animation js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "KkiAirW4u5fBciPm_",
+            });
+        })();
+    </script>
+
+</body>
+
+</html>
